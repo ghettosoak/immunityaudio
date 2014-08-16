@@ -1,0 +1,91 @@
+header{
+	background: @light;
+	height:50px;
+	position: absolute;
+	top:0;
+	left:0;
+
+	@media @tabletUp{
+		height:60px;
+	}
+
+	.header-logo{
+		margin-left:5px;
+		height:50px;
+		width:50px;
+		.iconInclude;
+		.iconPlace(50px, 2, 0);
+
+		@media @tabletUp{
+			margin:5px;	
+		}
+	}
+}
+
+.links{
+	width:100%;
+	position: relative;
+	float:left;
+	text-align:center;
+
+	a{
+		color:white;
+		font-size:24px;
+		text-decoration:none;
+		position: relative;
+		display: inline-block;
+		margin: 15px 25px;
+		outline:none;
+		text-transform: uppercase;		
+
+		&:before,
+		&:after{
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: 50%;
+			height: 1px;
+			margin-top: -1px;
+			background: white;
+			content: '';
+			z-index: -1;
+			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+			-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+			transition: transform 0.3s, opacity 0.3s;
+			pointer-events: none;
+			opacity:1;
+		}
+
+		&:before {
+			-webkit-transform: translateY(-20px);
+			-moz-transform: translateY(-20px);
+			transform: translateY(-20px);
+		}
+
+		&:after {
+			-webkit-transform: translateY(20px);
+			-moz-transform: translateY(20px);
+			transform: translateY(20px);
+		}
+
+		&:hover{
+			&:before{
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				transform: rotate(45deg);
+				opacity:.7;
+			}
+
+			&:after{
+				-webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				opacity:.7;
+			}
+		}
+	}
+
+	.comingsoon{
+		margin-top:35px;
+	}
+}

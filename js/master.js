@@ -4,16 +4,4 @@
 //jquery v1.8.0 is included in this mess. Copyright 2012 jQuery Foundation and other contributors.
 //like something you see, but can't read this unholy mess? drop me a line at (mif)[at](awe)[minus](schaffhausen)[dot](com)
 
-var $windowPane = $(window)
-
-var paneHeight, paneWidth;
-
-var $master = $('#master')
-
-$(document).ready(function(){
-	$windowPane.resize(resizer);
-})
-
-var resizer = _.debounce(function(){
-
-},250)
+var $windowpane = $(window)
