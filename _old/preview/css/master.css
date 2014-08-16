@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'robotothin';
+  src: url("../type/roboto_thin/Roboto-Thin-webfont.eot");
+  src: url("../type/roboto_thin/Roboto-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../type/roboto_thin/Roboto-Thin-webfont.woff") format("woff"), url("../type/roboto_thin/Roboto-Thin-webfont.ttf") format("truetype"), url("../type/roboto_thin/Roboto-Thin-webfont.svg#robotothin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+::selection {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #444; }
+
+::-moz-selection {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #444; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: normal; }
+
+body {
+  background-color: #2060ad;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  padding: 20px;
+  position: absolute; }
+
+#master {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  font-family: robotothin;
+  overflow: hidden;
+  color: white;
+  border: 1px white solid;
+  letter-spacing: 1.5px; }
+
+.logo {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin: 0 auto 0;
+  background-image: url(../img/logo.png);
+  background-size: 200px 200px;
+  background-position: cover;
+  background-repeat: no-repeat; }
+  @media screen and (min-width: 768px) {
+    .logo {
+      margin: 200px auto 0; } }
+
+.links {
+  width: 100%;
+  position: relative;
+  float: left;
+  text-align: center; }
+  .links a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    outline: none;
+    text-transform: uppercase; }
+    .links a:before, .links a:after {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 50%;
+      height: 1px;
+      margin-top: -1px;
+      background: white;
+      content: '';
+      z-index: -1;
+      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+      -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s;
+      pointer-events: none;
+      opacity: 1; }
+    .links a:before {
+      -webkit-transform: translateY(-20px);
+      -moz-transform: translateY(-20px);
+      transform: translateY(-20px); }
+    .links a:after {
+      -webkit-transform: translateY(20px);
+      -moz-transform: translateY(20px);
+      transform: translateY(20px); }
+    .links a:hover:before {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      transform: rotate(45deg);
+      opacity: .7; }
+    .links a:hover:after {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      opacity: .7; }
+  .links .comingsoon {
+    margin-top: 35px; }
