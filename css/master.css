@@ -117,6 +117,17 @@ header .header-logo {
     margin: 5px;
   }
 }
+header .mobileOpener {
+  height: 50px;
+  width: 50px;
+  background-size: 250px auto;
+  background-image: url(../img/spritesheet.svg);
+  background-position: -100px 0px;
+}
+.lt-ie9 header .mobileOpener,
+.no-svg header .mobileOpener {
+  background-image: url(../img/spritesheet_1x.png);
+}
 .links {
   width: 100%;
   position: relative;
